@@ -1,4 +1,5 @@
 # Info
+This project was created for learning purposes.
 
 # Source
 
@@ -42,3 +43,5 @@ nc -l -p 4444
 # send
 cat ./test/vehicleY1000.bin | nc 127.0.0.1 4445
 ```
+
+# Camera
