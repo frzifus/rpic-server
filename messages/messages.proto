@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package rpic_messages;
+
+import "timestamp.proto";
+
+message CtlMessage {
+  int32 value = 1;
+
+  enum Direction {
+    X = 0;
+    Y = 1;
+  }
+  Direction direction = 2;
+
+  enum CtlType {
+    STOP = 0;
+    VEHICLE = 1;
+    CAMERA = 2;
+  }
+  CtlType ctl_type = 3;
+}
+
+message ImgMessage {
+  google.protobuf.Timestamp time = 1;
+  string value = 2;
+}
+
+message ClientInfoMessage {
+  string clientInfo = 1;
+}
+
+message ClientCommand {
+  string command = 1;
+}

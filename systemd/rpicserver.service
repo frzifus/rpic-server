@@ -1,0 +1,9 @@
+[Unit]
+Description=Rpic Server
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/rpic-server-linux-arm
+
+[Install]
+WantedBy=multi-user.target
